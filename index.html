@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+	minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Mi proyecto.</title>
+	<!-- Estilos CSS -->
+	<link rel="stylesheet" href="css/estilos.css">
+	<!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<!-- Icon fonts -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hwvjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+1sFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+	<style>
+		/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ESTILOS GENERALES */
+    html, body {
+	height: 100%;
+    }
+    /* Modificar el modelo de cajas de css */
+    html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+    }
+    *, *::before, ::after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit
+    }
+    /* Resetear margenes y padding */
+    * {
+	margin: 0;
+	padding: 0;
+    }
+    body {
+	font-family: "Open Sans", sans-serif;
+    }
+    .container {
+	width: 90%;
+	margin: 0 auto;
+    }
+    /* ESTILOS DE LOS CONTENIDOS */
+    /* Estilos de hearder */
+    hearder {
+	background-color: green;
+	overflow: hidden
+    }
+    #logo {
+	float: left;
+    }
+    #infoContacto {
+	float: right;
+	margin-top: 22px;
+    }
+    #infoContacto {
+    	color: #fff;
+    	margin-right: 12px;
+    	font-size: 1.25rem;
+    }
+    /* Seccion 1 */
+    article > section:nth-child(1) {
+    	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 185, 30, 0.83)), to(rgba(25, 59, 240, 0.83))) url(../images/fondo_superior.jpg);
+    	background-image: -o-linear-gradient(rgba(55, 185, 30, 0.83), rgba(25, 59, 240, 0.83)) url(../images/fondo_superior.jpg);
+    	background-image: linear-gradient(rgba(55, 185, 30, 0.83), rgba(25, 59, 240, 0.83)) url(../images/fondo_superior.jpg);
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center right;
+    }
+    /* PIE DE PAGINA */
+    footer {
+        background-color: #2c2a2a;
+        padding: 20px 0;
+    }
+    input[type="text"], input[type="email"] {
+        display: inline-block;
+        width: 100%;
+        height: 45px;
+        padding: 0 1rem;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+    	display: inline-block;
+    	border: none;
+    	background-color: #008000;
+    	color: #fff;
+    	width: 100%;
+    	padding: 10px 1em;
+    	margin: 25px auto;
+    	font-size: 1rem;
+    }
+    small a {
+    	color: #fff;
+    }
+    /* Seccion 2 */
+    article > section:nth-child(2) {
+    	padding: 60px 0;
+    }
+    #seccionDos {
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-box-orient: horizontal;
+    	-webkit-box-direction: normal;
+    	    -ms-flex-flow: row wrap;
+    	        flex-flow: row wrap;
+    	-webkit-box-pack: justify;
+    	    -ms-flex-pack: justify;
+    	        justify-content: space-between;
+    	text-align: center;
+    }
+    #seccionDos i {
+    	color: #13a3db;
+    	font-size: 2.5rem;
+    	border: 2px solid;
+    	border-radius: 50%;
+    	padding: 48px 0;
+    	width: 140px;
+    	height: 140px;
+    	margin-bottom: 35px;
+    }
+    .col h3 {
+    	font-size: 1.1rem;
+    	font-weight: 500;
+    	margin-bottom: 12px;
+    }
+    /* Seccion 3 */
+    article > section:nth-child(3) {
+    	background-color: #f6f9fd;
+    	padding: 40px 0;
+    }
+    #seccionTres {
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-box-orient: horizontal;
+    	-webkit-box-direction: normal;
+    	    -ms-flex-flow: row wrap;
+    	        flex-flow: row wrap;
+    }
+    #seccionTres div {
+    	-ms-flex-preferred-size: 60%;
+    	    flex-basis: 60%;
+    	padding-right: 1.9em;
+    }
+    h2 {
+    	margin-bottom: 20px;
+    }
+    #seccionTres a {
+    	display: inline-block;
+    	background-color: #008000;
+    	color: #fff;
+    	padding: 12px 10em;
+    	text-decoration: none;
+    	margin: 25px 0;
+    }
+    video {
+    	-ms-flex-preferred-size: 40%;
+    	    flex-basis: 40%;
+    	width: 40%;
+    	-ms-flex-item-align: start;
+    	    align-self: flex-start;
+    }
+    /* Seccion 4 */
+    article > section:nth-child(4) {
+    	padding: 60px 0 0;
+    	text-align: center;
+    }
+    seccionCuatro {
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-box-pack: justify;
+    	    -ms-flex-pack: justify;
+    	        justify-content: space-between;
+    	margin: 50px auto;
+    }
+    .card {
+    	margin: 20px 0.5em;
+    	-webkit-box-shadow: 2px 5px 15px #ccc9c9;
+    	        box-shadow: 2px 5px 15px #ccc9c9;
+    	padding-bottom: 35px;
+    }
+    .card img {
+    	width: 100%;
+    	margin-bottom: 20px;
+    }
+    .card p {
+    	font-size: 0.9rem;
+    	padding: 12px 2em;
+    }
+    .card i {
+    	font-size: 1.5rem;
+    	color: #107bs7;
+    	margin: 0 0.2em;
+    }
+    /* Seccion 5 */
+     article > section:nth-child(5) {
+    	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 123, 167, 0.8)), to(rgba(16, 123, 167, 0.8))) url(../images/fondo_inferior.jpg);
+    	background-image: -o-linear-gradient(rgba(16, 123, 167, 0.8), rgba(16, 123, 167, 0.8)) url(../images/fondo_inferior.jpg);
+    	background-image: linear-gradient(rgba(16, 123, 167, 0.8), rgba(16, 123, 167, 0.8)) url(../images/fondo_inferior.jpg);
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center right;
+    }
+    #seccionCinco {
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	    -ms-flex-flow: column wrap;
+    	        flex-flow: column wrap;
+    	height: 100%;
+    	min-height: 400px;
+    	-webkit-box-pack: center;
+    	    -ms-flex-pack: center;
+    	        justify-content: center;
+    	-webkit-box-align: center;
+    	    -ms-flex-align: center;
+    	        align-items: center;
+    	color: #fff;
+    }
+    #seccionCinco h2 {
+    	margin-bottom: 0;
+    }
+    #seccionCinco p {
+    	padding: 20px 0;
+    }
+    #seccionCinco a {
+    	display: block;
+    	background-color: #37b81e;
+    	color: #fff;
+    	text-decoration: none;
+    	padding: 12px 2em;
+    }
+    #seccionCinco a:hover {
+    	background-color: #358d24;
+    	-webkit-transition: all 0.5s;
+    	-o-transition: all 0.5s;
+    	transition: all 0.5s;
+    }
+    #pieDePagina {
+    	overflow: hidden;
+    }
+    .nav {
+    	float: left;
+    }
+    .nav li {
+    	display: inline-block;
+    	font-size: 0.8rem;
+    	padding: 12px 0 0;
+    }
+    .nav li a {
+    	color: #c0bcbc;
+    	text-decoration: none;
+    	padding-right: 1.5em;
+    }
+    .nav li a:hover {
+    	text-decoration: underline;
+    }
+    .copyright {
+    	float: right;
+    	color: #c0bcbc;
+    	padding-top: 8px;
+    }
+    /* MEDIAS QUERIES */
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport sea igua o menor que 3840px */
+    @media screen and (max-width:3840px){
+    	.container {
+    		width: 91%;
+    		max-width: 3840px;
+    	}
+    }
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport sea igua o menor que 1920px*/
+    @media screen and (max-width:1920px) {
+    	.container {
+    		max-width: 1920px;
+    	}
+    }
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport se encuentre en un rango de 960px - 1199px */
+    @media screen and (min-width:960px) and (max-width:1199px) {
+    	.col h3 {
+    		font-size: 1.05rem;
+    	}
+    	h2 {
+    		font-size: 1.43rem;
+    	}
+    }
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport sea igual o mnor que 959px */
+    @media screen and (max-width:959px) {
+    	#intro {
+    		-webkit-box-orient: vertical;
+    		-webkit-box-direction: normal;
+    		    -ms-flex-flow: column wrap;
+    		        flex-flow: column wrap;
+    	}
+    	h1 {
+    		font-size: 3.3rem;
+    	}
+    	#descripcion {
+    		-ms-flex-preferred-size: 100%;
+    		    flex-basis: 100%;
+    		padding: 0 0 0 0;
+    		-webkit-box-flex: 0;
+    		    -ms-flex-positive: 0;
+    		        flex-grow: 0;
+    	}
+    	article > section:nth-child(2) {
+    		padding: 20px 0;
+    	}
+    	#seccionDos {
+    		-webkit-box-orient: vertical;
+    		-webkit-box-direction: normal;
+    		    -ms-flex-flow: column wrap;
+    		        flex-flow: column wrap;
+    	}
+    	.col {
+    		padding: 30px 0;
+    	}
+    	#seccionTres {
+    		-webkit-box-orient: vertical;
+    		-webkit-box-direction: normal;
+    		    -ms-flex-flow: column wrap;
+    		        flex-flow: column wrap;
+    	}
+    	#seccionTres div {
+    		-ms-flex-preferred-size: 100%;
+    		    flex-basis: 100%;
+    		padding-right: 0;
+    	}
+    	#seccionTres a {
+    		padding: 12px 0;
+    		width: 100%;
+    		text-align: center;
+    	}
+    	video {
+    		-ms-flex-preferred-size: 100%;
+    		    flex-basis: 100%;
+    		width: 100%;
+    	}
+    	article > section:nth-child(4) {
+    		padding: 30px 0 0;
+    	}
+    	#seccionCuatro {
+    		-webkit-box-orient: vertical;
+    		-webkit-box-direction: normal;
+    		    -ms-flex-flow: column;
+    		        flex-flow: column;
+    	}
+    	#seccionCinco {
+    		text-align: center;
+    	}
+    }
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport sea o menor que 659px */
+    @media screen and (max-width:659px) {
+    	#logo, #infoContacto {
+    		width: 100%;
+    		text-align: center;
+    		margin: 5px auto;
+    	}
+    	#pieDePagina {
+    		text-align: center;
+    	}
+    	.nav {
+    		float: none;
+    	}
+    	.nav li {
+    		display: block;
+    		margin: 20px 0;
+    	}
+    	.copyright {
+    		float: none;
+    		border-top: 1px solid #3e3e3e3e;
+    		margin-top: 30px;
+    	}
+    }
+    body {
+    	background-color: black;
+    	color: #fff;
+    }
+    .font-size {
+       color: white;
+    }
+	</style>
+
+	<!-- Cabecera -->
+	<header>
+	<div id="container">
+		<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+		<svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>55-8540-2006<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+	</div>
+	</header>
+
+	<main>
+		<article>
+			<section>
+				<div id="intro" class="container">
+					<div id="descripcion">
+						<h1>Venta de autos.<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg></h1>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div id="formularios">
+						<h2>Solicitar informacion del coche que le llame la atencion</h2>
+
+						<form action="datos.php" method="POST">
+							<label for="suNombre">Nombre:</label>
+							<input type="text" name="nombre" id="suNombre">
+
+							<label for="suApellido">Apellido:</label>
+							<input type="text" name="apellido" id="suApellido">
+
+							<label for="suEmail">Email:</label>
+							<input type="email" name="email" id="suEmail">
+
+							<label for="suNumero">Numero de telefono:</label>
+							<input type="numero_de_telefono" name="numero" id="suNumero">
+						</form>
+						<small>* Nunca compartiremos tu informacion personal con
+							terceros. Revisa nuestra <a href="#" target="blank">Politica de privacidad</a></small>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="card">
+						<img src="images/Carro1.jpg" alt="Imagen de un carro">
+						<h3>ford gt</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+						<p>$2,000,000.00</p>
+						<p>Carro deportivo.</p>
+					</div>
+					<div class="card">
+						<img src="images/Carro2.jpg" alt="Imagen de un carro">
+						<h3>volkswagen</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+						<p>$135,000.00</p>
+						<p>Auto para a calle.</p>
+					</div>
+					<div class="card">
+						<img src="images/Carro3.jpg" alt="Imagen de un carro">
+					    <h3>Austin healey.</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+						<p>$3,000,000.00</p>
+						<p>Coleccionable y para disfrutar.</p>
+					</div>
+					<div class="card">
+						<img src="images/Carro4.png" alt="Imagen de un carro">
+						<h3>mercedes</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+						<p>$3,000,000.00</p>
+						<p>Para estar en la calle.</p>
+					</div>
+				</div>
+			</section>
+			<section></section>
+			<section>
+				<div>
+				<p>En dado caso que hubo un defecto en nuestros productos este es el telefono con el que te puedes contactar</p>
+				<p>55-8540-2006</p><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+			    </div>
+			</section>
+			<section>
+				<div id="seccionCinco" class="container">
+					<h2>¿Deseas mas informacion acerca del coche?</h2>
+					<p>Rellena nuestro formulario de solicitud de informacion
+					y nos pondremos en contacto contigo</p>
+					<a href="#">¡Solicitar informacion ahora!</a>
+					<a href="#">Nosotros te contactamos.</a>
+					<p>descripcion:Nosotros te hacemos garantia de 4 años.</p>
+				</div>
+			</section>
+	</main>
+	<footer>
+    	<div id="pieDePagina" class="container">
+    		<ul class="nav">
+    			<li><a href="#">Home</a></li>
+    			<li><a href="#">Acerca de</a></li>
+    			<li><a href="#">Cursos</a></li>
+    			<li><a href="#">Politica de privacidad</a></li>
+    			<li><a href="#">Contacto</a></li>
+    		</ul>
+
+    		<div class="copyright">
+    			<small>Proyecto escolar no cuento con derechos</small>
+    		</div>
+    	</div>
+    </footer>
+
+</body> 
+</html>
